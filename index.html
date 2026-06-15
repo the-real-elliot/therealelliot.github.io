@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheRealElliot | Cybersecurity Engineer & Developer Portfolio</title>
+    <meta name="description" content="TheRealElliot's professional portfolio. Specializing in advanced malware design, full-stack web development, software engineering, and defensive/offensive cybersecurity services.">
+    <meta name="keywords" content="TheRealElliot, Cybersecurity, Malware Design, Web Development, Coding, Pen testing, Exploit developer, Portfolio">
+    <meta name="author" content="TheRealElliot">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="TheRealElliot | Cybersecurity & Development Specialist">
+    <meta property="og:description" content="Explore TheRealElliot's services in Malware Design, Cyber Security, Secure Web Development, and Custom Coding.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://discord.gg/EZqQ9ZNQQ">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-light">
+    <!-- Cyber Background Canvas -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- Scanning Overlay for Retro Tech Vibe -->
+    <div class="scanlines"></div>
+
+    <!-- Header Navigation -->
+    <header class="main-header navbar-glass">
+        <div class="container header-container">
+            <a href="#" class="logo" id="logo-link">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-name">TheRealElliot</span>
+                <span class="logo-slash">/</span>
+                <span class="logo-sec">SEC</span>
+                <span class="logo-bracket">&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link" id="nav-about">// whoami</a>
+                <a href="#services" class="nav-link" id="nav-services">// services</a>
+                <a href="#lab" class="nav-link" id="nav-lab">// security_lab</a>
+                <a href="#discord" class="nav-link" id="nav-discord">// community</a>
+                <a href="#contact" class="nav-link" id="nav-contact">// contact</a>
+            </nav>
+            
+            <button class="btn-donate-nav" id="btn-donate-nav" onclick="openDonatePopup()">
+                💸 Support
+            </button>
+
+            <div class="header-status">
+                <span class="status-indicator online animate-pulse"></span>
+                <span class="status-text text-mono">FIREWALL: ACTIVE</span>
+            </div>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <div class="drawer-header">
+            <span class="text-mono font-bold text-accent">// NAV_MENU</span>
+            <button class="drawer-close" id="drawer-close">&times;</button>
+        </div>
+        <nav class="drawer-nav">
+            <a href="#about" class="drawer-link" id="drawer-link-about">whoami</a>
+            <a href="#services" class="drawer-link" id="drawer-link-services">services</a>
+            <a href="#lab" class="drawer-link" id="drawer-link-lab">security_lab</a>
+            <a href="#discord" class="drawer-link" id="drawer-link-discord">community</a>
+            <a href="#contact" class="drawer-link" id="drawer-link-contact">contact</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container grid-2">
+                <div class="hero-info">
+                    <div class="tagline text-mono">
+                        <span class="tag-icon">&gt;</span> ESTABLISHING ENCRYPTED TUNNEL... SUCCESS
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I am <span class="text-accent text-glitch" data-text="TheRealElliot">TheRealElliot</span>
+                    </h1>
+                    <h2 class="hero-subtitle text-gradient">
+                        Cybersecurity Engineer &amp; Exploit Developer
+                    </h2>
+                    <p class="hero-description text-muted">
+                        Specializing in advanced malware simulation, defensive security engineering, full-stack secure web applications, and red-team operations.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#services" class="btn btn-primary" id="btn-view-services">
+                            <span class="btn-text">View Services</span>
+                            <span class="btn-arrow">&rarr;</span>
+                        </a>
+                        <a href="https://discord.gg/EZqQ9ZNQQ" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="btn-join-discord-hero">
+                            <span class="discord-icon-svg">
+                                <svg width="18" height="18" viewBox="0 0 127.14 96.36" fill="currentColor">
+                                    <path d="M107.7,8.07A105.15,105.15,0,0,0,77.26,0a77.19,77.19,0,0,0-3.3,6.83A96.67,96.67,0,0,0,53.22,6.83,77.19,77.19,0,0,0,49.88,0,105.15,105.15,0,0,0,19.44,8.07C3.66,31.58-1.95,54.65,1,77.53a107.4,107.4,0,0,0,32,16.17,79,79,0,0,0,6.85-11.11,68.4,68.4,0,0,1-10.75-5.13c.91-.66,1.8-1.34,2.65-2a76.77,76.77,0,0,0,70.92,0c.85.71,1.74,1.39,2.65,2a68.68,68.68,0,0,1-10.75,5.13,78.85,78.85,0,0,0,6.85,11.11,107.14,107.14,0,0,0,32-16.17C129.24,48.72,123.38,25.87,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53S36.18,40.36,42.45,40.36,53.83,46,53.83,53,48.72,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.24,60,73.24,53S78.41,40.36,84.69,40.36,96.07,46,96.07,53,91,65.69,84.69,65.69Z"/>
+                                </svg>
+                            </span>
+                            <span class="btn-text">Join Discord</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-terminal-wrapper">
+                    <!-- Interactive Terminal Window -->
+                    <div class="terminal-window card-glass" id="interactive-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="dot-btn red"></span>
+                                <span class="dot-btn yellow"></span>
+                                <span class="dot-btn green"></span>
+                            </div>
+                            <span class="terminal-title text-mono">elliot@sec-ops:~</span>
+                            <span class="terminal-badge">SECURE</span>
+                        </div>
+                        <div class="terminal-body text-mono" id="terminal-content">
+                            <div class="terminal-row"><span class="terminal-prompt">guest@elliot.sec:~$</span> <span class="text-white">whoami</span></div>
+                            <div class="terminal-row text-comment"># TheRealElliot: Cyber Security Engineer, Malware Architect, and Web Developer.</div>
+                            <div class="terminal-row"><span class="terminal-prompt">guest@elliot.sec:~$</span> <span class="text-white">cat intro.txt</span></div>
+                            <div class="terminal-row text-muted">I construct resilient software systems, perform advanced security reviews, design custom security testing tools (malware simulation), and build modern web applications with security-first architectures.</div>
+                            <div class="terminal-row"><span class="terminal-prompt">guest@elliot.sec:~$</span> <span class="text-white">help</span></div>
+                            <div class="terminal-row text-accent">Available commands: [about, services, lab, discord, clear, contact]</div>
+                            <div class="terminal-row active-input-row">
+                                <span class="terminal-prompt">guest@elliot.sec:~$</span>
+                                <input type="text" class="terminal-input" id="terminal-cmd-input" autofocus autocomplete="off" spellcheck="false" placeholder="type a command...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag text-mono">// 01. PROFILE</span>
+                    <h2 class="section-title">Operational Dossier</h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="grid-3 stats-grid">
+                    <div class="stat-card card-glass">
+                        <div class="stat-icon-wrapper purple">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        </div>
+                        <h3 class="stat-value text-mono">99.9%</h3>
+                        <p class="stat-label">Security Audits Integrity</p>
+                    </div>
+                    <div class="stat-card card-glass">
+                        <div class="stat-icon-wrapper cyan">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                        </div>
+                        <h3 class="stat-value text-mono">50+</h3>
+                        <p class="stat-label">Secure Platforms Designed</p>
+                    </div>
+                    <div class="stat-card card-glass">
+                        <div class="stat-icon-wrapper green">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <h3 class="stat-value text-mono">100k+</h3>
+                        <p class="stat-label">Lines of Secure Code</p>
+                    </div>
+                </div>
+
+                <div class="about-grid grid-2">
+                    <div class="about-text-content">
+                        <h3>About TheRealElliot</h3>
+                        <p>
+                            I approach the digital space with a security-focused mindset. In cyber security, understanding code execution, system memory, and networking protocols is paramount. I fuse my software engineering prowess with deep vulnerability research to craft highly secure applications.
+                        </p>
+                        <p>
+                            My expertise spans both the offensive and defensive realms. Whether writing secure backends, designing customized simulation malware to audit enterprise defenses, or testing complex web applications for security flaws, I bring high-level expertise and custom engineered solutions to every project.
+                        </p>
+                        <div class="tech-stack-container">
+                            <h4 class="text-mono text-accent">// MAIN UTILITIES:</h4>
+                            <ul class="tech-list text-mono">
+                                <li>C / C++ (Malware Dev)</li>
+                                <li>Python (Automation / Exploit scripting)</li>
+                                <li>Rust (Secure System Utils)</li>
+                                <li>React / Vite (Frontend)</li>
+                                <li>Node.js / Express (Backend)</li>
+                                <li>Go / Assembly (Network Dev)</li>
+                                <li>Wireshark / Burp Suite</li>
+                                <li>GDB / Ghidra (Reverse Eng)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="terminal-card card-glass text-mono">
+                            <div class="card-header text-muted">// DIAGNOSTICS: CURRENT_SYSTEM</div>
+                            <div class="card-body">
+                                <p><span class="text-accent">OS:</span> Secure Linux / Hardened kernel</p>
+                                <p><span class="text-accent">Primary Target:</span> Enterprise Vulnerability Auditing</p>
+                                <p><span class="text-accent">Network Intel:</span> VPN Active [AES-256]</p>
+                                <p><span class="text-accent">Active Agents:</span> Red-Team / Payload Engine</p>
+                                <hr class="card-divider">
+                                <p class="text-comment"># System logs checking...</p>
+                                <p class="text-success">&bull; Firewall Integrity: [SECURE]</p>
+                                <p class="text-success">&bull; Zero-Day Patches: [APPLIED]</p>
+                                <p class="text-success">&bull; Intrusion Prevention: [ACTIVE]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section services-section bg-darker" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag text-mono">// 02. SERVICES</span>
+                    <h2 class="section-title">Primary Services</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="grid-2 services-grid">
+                    <!-- Service Card 1: Coding -->
+                    <div class="service-card card-glass glow-purple" id="service-coding">
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-purple"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <h3 class="service-name">Secure Coding &amp; Software Engineering</h3>
+                        <p class="service-description">
+                            Writing reliable, high-performance code in C/C++, Rust, Go, and Python. Designing custom tools, encryption engines, low-level network sockets, and performance-critical systems scripts.
+                        </p>
+                        <ul class="service-details text-mono">
+                            <li><span class="bullet">&gt;</span> Custom System Tools Development</li>
+                            <li><span class="bullet">&gt;</span> Memory-Safe Programming (Rust/C++)</li>
+                            <li><span class="bullet">&gt;</span> Socket programming &amp; Network Automation</li>
+                            <li><span class="bullet">&gt;</span> API Development &amp; Microservices</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Card 2: Malware Design -->
+                    <div class="service-card card-glass glow-red" id="service-malware">
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                        </div>
+                        <h3 class="service-name">Defensive Malware Design &amp; Simulation</h3>
+                        <p class="service-description">
+                            Simulating advanced threat behaviors to evaluate and harden antivirus/EDR defenses. Custom payload development, process injection mechanisms, obfuscation tactics, and security evasion testing. (Strictly for educational and defensive auditing).
+                        </p>
+                        <ul class="service-details text-mono">
+                            <li><span class="bullet">&gt;</span> Custom Payload Development &amp; Evasion</li>
+                            <li><span class="bullet">&gt;</span> API Hashing &amp; Dynamic Import Resolution</li>
+                            <li><span class="bullet">&gt;</span> Process Injection &amp; Memory Obfuscation</li>
+                            <li><span class="bullet">&gt;</span> Exploit Mocking &amp; Defense Auditing</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Card 3: Web Development -->
+                    <div class="service-card card-glass glow-cyan" id="service-webdev">
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
+                        <h3 class="service-name">Full-Stack Secure Web Development</h3>
+                        <p class="service-description">
+                            Building visually spectacular, responsive, and performance-optimized websites using modern stacks. Integrating secure authentication, robust database engines, and beautiful animations with strict security standards.
+                        </p>
+                        <ul class="service-details text-mono">
+                            <li><span class="bullet">&gt;</span> Custom Interactive Web Portals</li>
+                            <li><span class="bullet">&gt;</span> Robust Backend with Node.js/Go</li>
+                            <li><span class="bullet">&gt;</span> Database Protection &amp; SQLi Mitigation</li>
+                            <li><span class="bullet">&gt;</span> OWASP Top 10 Secure Architectures</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Card 4: Cyber Security -->
+                    <div class="service-card card-glass glow-green" id="service-cybersec">
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <h3 class="service-name">Penetration Testing &amp; Cybersecurity</h3>
+                        <p class="service-description">
+                            Identifying potential vulnerabilities in your servers, web applications, and local systems before real attackers do. I analyze architecture, trace software execution, and patch systems to maximize security.
+                        </p>
+                        <ul class="service-details text-mono">
+                            <li><span class="bullet">&gt;</span> Web Application Penetration Testing</li>
+                            <li><span class="bullet">&gt;</span> System Vulnerability Auditing &amp; Patching</li>
+                            <li><span class="bullet">&gt;</span> Threat Intelligence &amp; Network Capture</li>
+                            <li><span class="bullet">&gt;</span> Custom Exploit Proof-of-Concepts (PoC)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Security Lab Section (WOW Factor Interactive Element) -->
+        <section class="section lab-section" id="lab">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag text-mono">// 03. INTERACTIVE LAB</span>
+                    <h2 class="section-title">Virtual Security Laboratory</h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="lab-grid grid-2">
+                    <div class="lab-controls card-glass">
+                        <h3>Diagnostic Control Panel</h3>
+                        <p class="text-muted">Trigger defensive tools in this simulated sandbox. Select a diagnostic module below to analyze threat mitigation and check security system logs.</p>
+                        
+                        <div class="lab-buttons">
+                            <button class="lab-btn active" id="lab-btn-firewall" onclick="runLabDiagnostic('firewall')">
+                                <span class="indicator green"></span>
+                                <span class="btn-label">Verify Firewall Integrity</span>
+                            </button>
+                            <button class="lab-btn" id="lab-btn-malware" onclick="runLabDiagnostic('malware')">
+                                <span class="indicator red"></span>
+                                <span class="btn-label">Analyze Ransomware Sandbox</span>
+                            </button>
+                            <button class="lab-btn" id="lab-btn-network" onclick="runLabDiagnostic('network')">
+                                <span class="indicator cyan"></span>
+                                <span class="btn-label">Decrypt Network Packets</span>
+                            </button>
+                        </div>
+
+                        <div class="lab-status text-mono">
+                            <div class="status-row"><span>MODULE STATUS:</span> <span class="text-success" id="lab-status-module">ONLINE</span></div>
+                            <div class="status-row"><span>SANDBOX CONTAINER:</span> <span class="text-accent" id="lab-status-container">SECURE_DOCKER_09</span></div>
+                            <div class="status-row"><span>SYSTEM MEMORY:</span> <span class="text-white" id="lab-status-mem">0.45% UTILIZED</span></div>
+                        </div>
+                    </div>
+
+                    <div class="lab-console-wrapper">
+                        <div class="lab-console card-glass text-mono" id="lab-console-body">
+                            <div class="console-line text-comment">// INITIALIZING INTERACTIVE DIAGNOSTIC SCREEN...</div>
+                            <div class="console-line text-success">SUCCESS: Connected to Security Sandbox API.</div>
+                            <div class="console-line">Ready for diagnostics. Select a module from the control panel to start simulation.</div>
+                            <div class="console-line text-accent">&gt; _</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discord Invitation Section -->
+        <section class="section discord-section bg-darker" id="discord">
+            <div class="container">
+                <div class="discord-card-wrapper">
+                    <!-- Glowing border effect -->
+                    <div class="discord-card card-glass glow-blue">
+                        <div class="discord-content grid-2">
+                            <div class="discord-left">
+                                <div class="discord-tag text-mono"><span class="badge-new">JOIN THE TEAM</span> SECURITY DEPT</div>
+                                <h2>Enter the Command Center</h2>
+                                <p>
+                                    Join my official Discord community. Collaborate on coding projects, share resources on malware development &amp; defensive strategies, discuss cybersecurity, or hire my services directly.
+                                </p>
+                                <div class="discord-stats text-mono">
+                                    <div class="discord-stat">
+                                        <span class="online-indicator"></span>
+                                        <span class="discord-stat-count" id="discord-online-count">142</span> Online
+                                    </div>
+                                    <div class="discord-stat">
+                                        <span class="member-indicator"></span>
+                                        <span class="discord-stat-count">850+</span> Members
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="discord-right flex-center">
+                                <div class="discord-box">
+                                    <div class="discord-logo-large">
+                                        <svg width="80" height="80" viewBox="0 0 127.14 96.36" fill="currentColor">
+                                            <path d="M107.7,8.07A105.15,105.15,0,0,0,77.26,0a77.19,77.19,0,0,0-3.3,6.83A96.67,96.67,0,0,0,53.22,6.83,77.19,77.19,0,0,0,49.88,0,105.15,105.15,0,0,0,19.44,8.07C3.66,31.58-1.95,54.65,1,77.53a107.4,107.4,0,0,0,32,16.17,79,79,0,0,0,6.85-11.11,68.4,68.4,0,0,1-10.75-5.13c.91-.66,1.8-1.34,2.65-2a76.77,76.77,0,0,0,70.92,0c.85.71,1.74,1.39,2.65,2a68.68,68.68,0,0,1-10.75,5.13,78.85,78.85,0,0,0,6.85,11.11,107.14,107.14,0,0,0,32-16.17C129.24,48.72,123.38,25.87,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53S36.18,40.36,42.45,40.36,53.83,46,53.83,53,48.72,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.24,60,73.24,53S78.41,40.36,84.69,40.36,96.07,46,96.07,53,91,65.69,84.69,65.69Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="discord-server-info text-center">
+                                        <h4 class="text-white font-bold">Elliot's Command Center</h4>
+                                        <p class="text-muted text-mono text-xs">discord.gg/EZqQ9ZNQQ</p>
+                                    </div>
+                                    <a href="https://discord.gg/EZqQ9ZNQQ" target="_blank" rel="noopener noreferrer" class="btn btn-discord btn-full" id="btn-discord-join-large">
+                                        Join Server
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag text-mono">// 04. CONTACT</span>
+                    <h2 class="section-title">Secure Encrypted Portal</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="grid-2 contact-grid">
+                    <div class="contact-info">
+                        <h3>Connect with TheRealElliot</h3>
+                        <p class="text-muted">
+                            Need a custom tool developed, application audited for vulnerabilities, malware simulation run, or modern web app built? Send me an encrypted message here, or contact me via my socials or Discord directly.
+                        </p>
+                        
+                        <div class="contact-channels text-mono">
+                            <div class="channel-item">
+                                <span class="channel-label">DISCORD:</span>
+                                <a href="https://discord.gg/EZqQ9ZNQQ" target="_blank" rel="noopener noreferrer" class="channel-val text-accent hover-underline">Elliot's Server</a>
+                            </div>
+                            <div class="channel-item">
+                                <span class="channel-label">INSTAGRAM:</span>
+                                <a href="https://instagram.com/iamrealelliotalderson" target="_blank" rel="noopener noreferrer" class="channel-val text-accent hover-underline">@iamrealelliotalderson</a>
+                            </div>
+                            <div class="channel-item">
+                                <span class="channel-label">EMAIL:</span>
+                                <span class="channel-val text-white">Alimhussain12665@gmail.com</span>
+                            </div>
+                            <div class="channel-item">
+                                <span class="channel-label">STATUS:</span>
+                                <span class="channel-val text-success">AVAILABLE FOR FREELANCE &amp; CONSULTING</span>
+                            </div>
+                        </div>
+                        
+                        <div class="pgp-block card-glass text-mono">
+                            <div class="pgp-header">// PUBLIC PGP KEY BLOCK</div>
+                            <div class="pgp-body">
+                                <p>-----BEGIN PGP PUBLIC KEY BLOCK-----</p>
+                                <p class="text-xs text-muted">mQINBF2S62oBEADZtV4mGvH4bS1Wf3o0i... (Shortened for space)</p>
+                                <p class="text-xs text-muted">9UaT78gO/uQ76V5qM82y8pA9qD/l1a8n2...</p>
+                                <p>-----END PGP PUBLIC KEY BLOCK-----</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <!-- Custom Secure Form -->
+                        <form class="contact-form card-glass" id="portal-form" onsubmit="handlePortalSubmit(event)">
+                            <div class="form-header text-mono">// INITIATE ENCRYPTED TRANSMISSION</div>
+                            
+                            <div class="form-group">
+                                <label for="form-name" class="form-label text-mono">AGENT_NAME / SENDER:</label>
+                                <input type="text" id="form-name" class="form-input" placeholder="e.g. John Doe" required autocomplete="name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-email" class="form-label text-mono">REPLY_EMAIL / COMMUNICATIONS:</label>
+                                <input type="email" id="form-email" class="form-input" placeholder="e.g. agent@domain.com" required autocomplete="email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-subject" class="form-label text-mono">MISSION_SUBJECT / TYPE:</label>
+                                <select id="form-subject" class="form-input">
+                                    <option value="cybersec">Cyber Security Auditing</option>
+                                    <option value="malware">Malware / EDR Simulation</option>
+                                    <option value="webdev">Secure Web Development</option>
+                                    <option value="coding">Custom Secure Coding</option>
+                                    <option value="general">Other / General Operations</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-message" class="form-label text-mono">ENCRYPTED_MESSAGE / REQUIREMENTS:</label>
+                                <textarea id="form-message" class="form-input form-textarea" placeholder="Describe your mission goals, specifications, and scope..." required></textarea>
+                            </div>
+
+                            <div class="form-group-checkbox">
+                                <input type="checkbox" id="form-encrypt" checked>
+                                <label for="form-encrypt" class="text-mono text-xs text-muted">Encrypt message using local PGP parameters before transmission</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full" id="btn-submit-contact">
+                                <span class="btn-text">Transmit Payload</span>
+                                <span class="btn-arrow">&rArr;</span>
+                            </button>
+                            
+                            <div class="form-status-msg text-mono text-center" id="form-status-msg"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer text-mono">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <p>&copy; 2026 TheRealElliot. All rights reserved.</p>
+                <p class="text-xs text-muted">Defensive services under legal framework and authorization only.</p>
+            </div>
+            <div class="footer-right">
+                <span class="terminal-text text-accent">STAY SAFE_</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS File -->
+    <script src="script.js"></script>
+
+    <!-- ===== DONATE POPUP ===== -->
+    <div id="donate-overlay" class="donate-overlay" onclick="closeDonatePopup(event)">
+        <div class="donate-popup" id="donate-popup">
+
+            <!-- Scanline effect inside popup -->
+            <div class="donate-scanlines"></div>
+
+            <!-- Close button -->
+            <button class="donate-close" onclick="closeDonatePopup(true)">✕</button>
+
+            <!-- Header -->
+            <div class="donate-header">
+                <div class="donate-skull">💀</div>
+                <div class="donate-tag text-mono">> ALERT: HACKER_NEEDS_FUEL</div>
+                <h2 class="donate-title">You found me.<br><span class="donate-title-accent">Now feed me.</span></h2>
+            </div>
+
+            <!-- Guilt trip body -->
+            <div class="donate-body">
+                <p class="donate-msg">
+                    This entire site — the matrix rain, the hacking lab, every pixel —<br>
+                    was built at <span class="donate-highlight">3AM on instant noodles</span> and caffeine.<br><br>
+                    No VC funding. No sugar daddy. Just <span class="donate-highlight">raw skill & broke energy.</span><br><br>
+                    A single cup of chai = <span class="donate-accent">₹10</span>. You've probably spent more on Wi‑Fi today.<br>
+                    Be the person who keeps this hacker alive. 🙏
+                </p>
+
+                <div class="donate-terminal text-mono">
+                    <span class="text-comment"># calculating your karma score...</span><br>
+                    <span class="text-accent">> donate();</span> <span class="text-success">// returns: infinite_blessings + good_vibes</span><br>
+                    <span class="text-comment"># don't donate();</span> <span style="color:#ff4444">// returns: bad_luck_stack_overflow</span>
+                </div>
+
+                <!-- UPI Payment Buttons -->
+                <div class="donate-amounts">
+                    <button class="donate-amt-btn" onclick="payUPI(10)">☕ ₹10</button>
+                    <button class="donate-amt-btn" onclick="payUPI(50)">🍜 ₹50</button>
+                    <button class="donate-amt-btn active" onclick="payUPI(100)">⚡ ₹100</button>
+                    <button class="donate-amt-btn" onclick="payUPI(500)">🔥 ₹500</button>
+                </div>
+
+                <a id="donate-upi-btn" href="upi://pay?pa=7706036226@upi&pn=TheRealElliot&tn=Support+TheRealElliot&am=100&cu=INR" class="btn-donate-upi">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    Pay via UPI App
+                </a>
+
+                <p class="donate-upi-id text-mono">UPI: <span class="donate-accent">7706036226@upi</span></p>
+                <p class="donate-note text-mono">Opens GPay / PhonePe / Paytm automatically 📲</p>
+            </div>
+
+            <!-- Footer -->
+            <div class="donate-footer text-mono">
+                <span class="text-success">● SECURE</span> &nbsp;|&nbsp;
+                <span class="text-muted">UPI Encrypted Transfer</span> &nbsp;|&nbsp;
+                <span class="text-accent">AES-256 Protected</span>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* ── Navbar Donate Button ── */
+        .btn-donate-nav {
+            background: linear-gradient(135deg, #7c3aed, #a855f7);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 7px 14px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            cursor: pointer;
+            font-family: 'Fira Code', monospace;
+            transition: transform 0.15s, box-shadow 0.2s;
+            box-shadow: 0 0 14px rgba(168, 85, 247, 0.4);
+            white-space: nowrap;
+        }
+        .btn-donate-nav:hover {
+            transform: translateY(-2px) scale(1.04);
+            box-shadow: 0 0 24px rgba(168, 85, 247, 0.7);
+        }
+
+        /* ── Overlay ── */
+        .donate-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.82);
+            backdrop-filter: blur(6px);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .donate-overlay.active {
+            display: flex;
+        }
+
+        /* ── Popup Box ── */
+        .donate-popup {
+            position: relative;
+            background: #0d0d14;
+            border: 1px solid rgba(168, 85, 247, 0.4);
+            border-radius: 18px;
+            max-width: 520px;
+            width: 100%;
+            padding: 40px 36px 30px;
+            box-shadow: 0 0 60px rgba(168,85,247,0.25), 0 0 120px rgba(124,58,237,0.1);
+            animation: popup-in 0.35s cubic-bezier(0.34,1.56,0.64,1);
+            overflow: hidden;
+        }
+        @keyframes popup-in {
+            from { opacity: 0; transform: scale(0.8) translateY(30px); }
+            to   { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        /* scanlines inside popup */
+        .donate-scanlines {
+            position: absolute;
+            inset: 0;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                rgba(0,0,0,0.08) 2px,
+                rgba(0,0,0,0.08) 4px
+            );
+            pointer-events: none;
+            border-radius: 18px;
+        }
+
+        /* ── Close ── */
+        .donate-close {
+            position: absolute;
+            top: 14px; right: 16px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: #aaa;
+            width: 32px; height: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: background 0.2s, color 0.2s;
+            z-index: 2;
+        }
+        .donate-close:hover { background: rgba(255,80,80,0.2); color: #ff5555; }
+
+        /* ── Header ── */
+        .donate-header { text-align: center; margin-bottom: 20px; }
+        .donate-skull {
+            font-size: 2.8rem;
+            animation: skull-float 2s ease-in-out infinite alternate;
+            display: block;
+            margin-bottom: 8px;
+        }
+        @keyframes skull-float {
+            from { transform: translateY(0); }
+            to   { transform: translateY(-8px); }
+        }
+        .donate-tag {
+            font-size: 0.72rem;
+            color: #a855f7;
+            letter-spacing: 0.12em;
+            margin-bottom: 10px;
+        }
+        .donate-title {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: #fff;
+            line-height: 1.2;
+            margin: 0;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .donate-title-accent {
+            background: linear-gradient(90deg, #a855f7, #7c3aed, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* ── Body ── */
+        .donate-body { text-align: center; }
+        .donate-msg {
+            font-size: 0.9rem;
+            color: #9ca3af;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+        .donate-highlight {
+            color: #fff;
+            font-weight: 700;
+        }
+        .donate-accent { color: #a855f7; font-weight: 700; }
+
+        .donate-terminal {
+            background: rgba(0,0,0,0.5);
+            border: 1px solid rgba(168,85,247,0.2);
+            border-radius: 8px;
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 0.75rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* ── Amount Buttons ── */
+        .donate-amounts {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 18px;
+        }
+        .donate-amt-btn {
+            background: rgba(168,85,247,0.1);
+            border: 1px solid rgba(168,85,247,0.3);
+            color: #c084fc;
+            border-radius: 8px;
+            padding: 8px 16px;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .donate-amt-btn:hover, .donate-amt-btn.active {
+            background: rgba(168,85,247,0.3);
+            border-color: #a855f7;
+            color: #fff;
+            box-shadow: 0 0 12px rgba(168,85,247,0.4);
+            transform: translateY(-2px);
+        }
+
+        /* ── Main UPI Button ── */
+        .btn-donate-upi {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 14px 24px;
+            background: linear-gradient(135deg, #7c3aed, #a855f7, #06b6d4);
+            background-size: 200% 200%;
+            border-radius: 12px;
+            color: #fff;
+            font-weight: 800;
+            font-size: 1rem;
+            letter-spacing: 0.05em;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            animation: upi-gradient 3s ease infinite;
+            box-shadow: 0 4px 24px rgba(124,58,237,0.5);
+            transition: transform 0.15s, box-shadow 0.2s;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        @keyframes upi-gradient {
+            0%   { background-position: 0% 50%; }
+            50%  { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .btn-donate-upi:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 36px rgba(124,58,237,0.7), 0 0 24px rgba(6,182,212,0.3);
+        }
+        /* shimmer sweep */
+        .btn-donate-upi::after {
+            content: '';
+            position: absolute;
+            top: 0; left: -80%;
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+            transform: skewX(-20deg);
+            animation: upi-shimmer 2s infinite;
+        }
+        @keyframes upi-shimmer {
+            0%   { left: -80%; }
+            100% { left: 120%; }
+        }
+
+        .donate-upi-id {
+            font-size: 0.78rem;
+            color: #6b7280;
+            margin: 10px 0 2px;
+        }
+        .donate-note {
+            font-size: 0.72rem;
+            color: #4b5563;
+            margin: 0 0 16px;
+        }
+
+        /* ── Footer ── */
+        .donate-footer {
+            font-size: 0.7rem;
+            text-align: center;
+            color: #4b5563;
+            padding-top: 14px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        /* ── Mobile ── */
+        @media (max-width: 480px) {
+            .donate-popup { padding: 30px 20px 24px; }
+            .donate-title { font-size: 1.4rem; }
+            .donate-msg { font-size: 0.82rem; }
+        }
+    </style>
+
+    <script>
+        // ── Donate Popup Logic ──
+        var currentAmount = 100;
+
+        function openDonatePopup() {
+            document.getElementById('donate-overlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeDonatePopup(force) {
+            if (force === true || (typeof force === 'object' && force.target === document.getElementById('donate-overlay'))) {
+                document.getElementById('donate-overlay').classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Amount buttons
+        function payUPI(amount) {
+            currentAmount = amount;
+            // Update active state
+            document.querySelectorAll('.donate-amt-btn').forEach(function(btn) {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            // Update UPI link with selected amount
+            var upiLink = 'upi://pay?pa=7706036226@upi&pn=TheRealElliot&tn=Support+TheRealElliot&am=' + amount + '&cu=INR';
+            document.getElementById('donate-upi-btn').href = upiLink;
+        }
+
+        // ESC key closes popup
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeDonatePopup(true);
+        });
+
+        // Auto-open after 30 seconds (sneaky 😈)
+        setTimeout(function() {
+            if (!document.getElementById('donate-overlay').classList.contains('active')) {
+                openDonatePopup();
+            }
+        }, 30000);
+    </script>
+</body>
+</html>
